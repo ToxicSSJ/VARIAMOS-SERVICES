@@ -68,6 +68,22 @@
 			<scope>system</scope>
 			<systemPath>${project.basedir}/src/lib/common.jar</systemPath>
 		</dependency>
+		<!-- Moduino JAR -->
+		<dependency>
+			<groupId>moduino</groupId>
+			<artifactId>code-generator</artifactId>
+			<version>1.0.0-SNAPSHOT</version>
+			<scope>system</scope>
+			<systemPath>${project.basedir}/src/lib/code-generator.jar</systemPath>
+		</dependency>
+		<!-- Moduino JAR -->
+		<dependency>
+			<groupId>moduino</groupId>
+			<artifactId>code-binder</artifactId>
+			<version>1.0.0-SNAPSHOT</version>
+			<scope>system</scope>
+			<systemPath>${project.basedir}/src/lib/code-binder.jar</systemPath>
+		</dependency>
 		<!-- TO FIX -> MUST BE REMOVED -->
 		<dependency>
 			<groupId>javax.json</groupId>
