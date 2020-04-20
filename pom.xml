@@ -15,6 +15,14 @@
 		<version>2.2.4.RELEASE</version>
 	</parent>
 
+	<repositories>
+		<!-- Jitpack for VariaMos arduino code generation -->
+		<repository>
+			<id>jitpack.io</id>
+			<url>https://jitpack.io</url>
+		</repository>
+	</repositories>
+
 	<!-- Add typical dependencies for a web application -->
 	<dependencies>
 		<dependency>
@@ -54,6 +62,12 @@
 			<artifactId>zip4j</artifactId>
 			<version>2.2.1</version>
 		</dependency>
+		<!-- https://mvnrepository.com/artifact/org.eclipse.jetty/jetty-server -->
+		<dependency>
+			<groupId>org.eclipse.jetty</groupId>
+			<artifactId>jetty-server</artifactId>
+			<version>9.4.28.v20200408</version>
+		</dependency>
 		<dependency>
 			<groupId>coffee</groupId>
 			<artifactId>compiler</artifactId>
@@ -68,22 +82,6 @@
 			<scope>system</scope>
 			<systemPath>${project.basedir}/src/lib/common.jar</systemPath>
 		</dependency>
-		<!-- Moduino JAR -->
-		<dependency>
-			<groupId>moduino</groupId>
-			<artifactId>code-generator</artifactId>
-			<version>1.0.0-SNAPSHOT</version>
-			<scope>system</scope>
-			<systemPath>${project.basedir}/src/lib/code-generator.jar</systemPath>
-		</dependency>
-		<!-- Moduino JAR -->
-		<dependency>
-			<groupId>moduino</groupId>
-			<artifactId>code-binder</artifactId>
-			<version>1.0.0-SNAPSHOT</version>
-			<scope>system</scope>
-			<systemPath>${project.basedir}/src/lib/code-binder.jar</systemPath>
-		</dependency>
 		<!-- TO FIX -> MUST BE REMOVED -->
 		<dependency>
 			<groupId>javax.json</groupId>
@@ -92,6 +90,12 @@
 			<scope>system</scope>
 			<systemPath>${project.basedir}/src/lib/javax.json.jar</systemPath>
 		</dependency>
+        <!-- VariaMos arduino code generation with moduino -->
+        <dependency>
+            <groupId>com.github.zlToxicNetherlz</groupId>
+            <artifactId>variamos-code-binder</artifactId>
+            <version>3.02</version>
+        </dependency>
 		<!-- TO FIX -> MUST BE REMOVED -->
 		<dependency>
 			<groupId>org.apache.httpcomponents</groupId>

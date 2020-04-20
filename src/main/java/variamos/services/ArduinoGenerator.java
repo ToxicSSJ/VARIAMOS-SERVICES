@@ -1,7 +1,7 @@
 package variamos.services;
 
-import co.edu.eafit.code.binder.api.BinderAPI;
-import co.edu.eafit.code.generator.metamodel.arduino.classes.Project;
+import com.variamos.moduino.binder.api.BinderAPI;
+import me.itoxic.moduino.metamodel.arduino.entries.Project;
 import org.springframework.boot.autoconfigure.EnableAutoConfiguration;
 import org.springframework.web.bind.annotation.*;
 
