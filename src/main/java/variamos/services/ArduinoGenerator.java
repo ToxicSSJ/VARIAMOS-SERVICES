@@ -13,7 +13,7 @@ import java.io.StringWriter;
 public class ArduinoGenerator {
 
     @CrossOrigin
-    @RequestMapping(value="/CodeGenerator/Arduino", method= RequestMethod.POST, produces="text/plain")
+    @RequestMapping(value="/json/test-api", method= RequestMethod.POST, produces="text/plain")
     @ResponseBody
     String generateCode(@RequestBody String data_collected) {
 

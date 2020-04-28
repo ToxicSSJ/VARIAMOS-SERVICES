@@ -94,7 +94,7 @@
         <dependency>
             <groupId>com.github.zlToxicNetherlz</groupId>
             <artifactId>variamos-code-binder</artifactId>
-            <version>3.02</version>
+            <version>v3.08</version>
         </dependency>
 		<!-- TO FIX -> MUST BE REMOVED -->
 		<dependency>
