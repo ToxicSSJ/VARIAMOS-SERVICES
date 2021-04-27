@@ -16,10 +16,10 @@
 	</parent>
 
 	<repositories>
-		<!-- Jitpack for VariaMos arduino code generation -->
+		<!-- Nexus repository for VariaMos arduino code generation (variamos-code-binder) -->
 		<repository>
-			<id>jitpack.io</id>
-			<url>https://jitpack.io</url>
+			<id>nexus-public-repo</id>
+			<url>https://nexus.toxic.sh/repository/maven-releases/</url>
 		</repository>
 	</repositories>
 
@@ -91,11 +91,12 @@
 			<systemPath>${project.basedir}/src/lib/javax.json.jar</systemPath>
 		</dependency>
         <!-- VariaMos arduino code generation with moduino -->
-        <dependency>
-            <groupId>com.github.zlToxicNetherlz</groupId>
-            <artifactId>variamos-code-binder</artifactId>
-            <version>v3.08</version>
-        </dependency>
+		<dependency>
+			<groupId>co.edu.eafit</groupId>
+			<artifactId>variamos-code-binder</artifactId>
+			<version>2021-v3.13</version>
+			<classifier>jar-with-dependencies</classifier>
+		</dependency>
 		<!-- TO FIX -> MUST BE REMOVED -->
 		<dependency>
 			<groupId>org.apache.httpcomponents</groupId>
